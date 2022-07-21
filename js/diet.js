@@ -1,65 +1,62 @@
 const Makanan = [
-  ['Steak', 270],
-  ['Mashed Potato', 88],
-  ['Nasi Goreng', 163],
-  ['Jagung Rebus', 35],
-  ['Telur Dadar', 153],
-  ['Ayam Goreng', 246],
-  ['Nasi Soto', 395],
-  ['Kimbab', 145],
-  ['Kangkung Tumis', 450],
-  ['Mie Instan', 200],
-  ['Onigiri', 203],
-  ['Bakso', 197],
-  ['Burger', 295],
-  ['Sate Kambing', 211],
-  ['Omelette', 154]
+  ['Steak', 270, 'RoToBoGo\img\makanan\Steak.png'],
+  ['Mashed Potato', 88, 'RoToBoGo\img\makanan\MashedPotato.jpg'],
+  ['Nasi Goreng', 163, 'RoToBoGo\img\makanan\NasiGoreng.jpeg'],
+  ['Jagung Rebus', 35, 'RoToBoGo\img\makanan\JagungRebus.jpg'],
+  ['Telur Dadar', 153, 'RoToBoGo\img\makanan\TelurDadar.jpg'],
+  ['Ayam Goreng', 246, 'RoToBoGo\img\makanan\AyamGoreng.jpg'],
+  ['Nasi Soto', 395, 'RoToBoGo\img\makanan\NasiSoto.jpg'],
+  ['Kimbab', 145, 'RoToBoGo\img\makanan\Kimbab.png'],
+  ['Kangkung Tumis', 450, 'RoToBoGo\img\makanan\KangkungTumis.jpg'],
+  ['Mie Instan', 200, 'RoToBoGo\img\makanan\MieInstan.jpg'],
+  ['Onigiri', 203, 'RoToBoGo\img\makanan\Onigiri.jpg'],
+  ['Bakso', 197, 'RoToBoGo\img\makanan\Bakso.jpg'],
+  ['Burger', 295, 'RoToBoGo\img\makanan\Burger.jpeg'],
+  ['Sate Kambing', 211, 'RoToBoGo\img\makanan\SateKambing.jpg'],
+  ['Omelette', 154, 'RoToBoGo\img\makanan\Omelette.jpg']
 ]
 
 const Minuman = [
-  ['Jus Mangga', 100],
-  ['Milk Shake', 112],
-  ['Coca Cola', 38],
-  ['Jus Nanas', 60],
-  ['Boba Milk Tea', 512],
-  ['Es Teh', 35],
-  ['Sprite', 39],
-  ['Susu Kedelai', 54],
-  ['Jus Wortel', 39],
-  ['Kopi Hitam', 2],
-  ['Jus Alpukat', 294],
-  ['Es Marjan', 130],
-  ['Pocari Sweat', 70],
-  ['Susu Milo', 220],
-  ['Jus Sirsak', 65]
+  ['Jus Mangga', 100, 'RoToBoGo\img\minuman\JusMangga.jpg'],
+  ['Milk Shake', 112, 'RoToBoGo\img\minuman\MilkShake.jpg'],
+  ['Coca Cola', 38, 'RoToBoGo\img\minuman\CocaCola.jpg'],
+  ['Jus Nanas', 60, 'RoToBoGo\img\minuman\JusNanas.jpeg'],
+  ['Boba Milk Tea', 512, 'RoToBoGo\img\minuman\BobaMilkTea.jpg'],
+  ['Es Teh', 35, 'RoToBoGo\img\minuman\EsTeh.jpg'],
+  ['Sprite', 39, 'RoToBoGo\img\minuman\Sprite.jpg'],
+  ['Susu Kedelai', 54, 'RoToBoGo\img\minuman\SusuKedelai.jpg'],
+  ['Jus Wortel', 39, 'RoToBoGo\img\minuman\JusWortel.jpg'],
+  ['Kopi Hitam', 2, 'RoToBoGo\img\minuman\KopiHitam.jpg'],
+  ['Jus Alpukat', 294, 'RoToBoGo\img\minuman\JusAlpukat.jpeg'],
+  ['Es Marjan', 130, 'RoToBoGo\img\minuman\EsMarjan.jpg'],
+  ['Pocari Sweat', 70, 'RoToBoGo\img\minuman\PocariSweat.jpg'],
+  ['Susu Milo', 220, 'RoToBoGo\img\minuman\SusuMilo.jpg'],
+  ['Jus Sirsak', 65, 'RoToBoGo\img\minuman\JusSirsak.jpeg']
 ]
 
 const PencuciMulut = [
-  ['Pudding', 120, 'img/cuci/pudding.jpg'],
-  ['Popcorn', 375],
-  ['Brownies', 466],
-  ['Keripik Kentang', 536],
-  ['Es Krim', 208],
-  ['Es Buah', 120],
-  ['Cookies', 501],
-  ['Donat', 452],
-  ['Croissant', 406],
-  ['Waffle', 291],
-  ['Bolu', 257],
-  ['Keripik Singkong', 220],
-  ['Bakwan', 137],
-  ['Cakwe', 200],
-  ['Pisang Rebus', 105]
+  ['Pudding', 120, 'RoToBoGo\img\cuci\Pudding.jpg'],
+  ['Popcorn', 375, 'RoToBoGo\img\cuci\Popcorn.jpg'],
+  ['Brownies', 466, 'RoToBoGo\img\cuci\Brownies.jpg'],
+  ['Keripik Kentang', 536, 'RoToBoGo\img\cuci\KeripikKentang.jpg'],
+  ['Es Krim', 208, 'RoToBoGo\img\cuci\EsKrim.jpg'],
+  ['Es Buah', 120, 'RoToBoGo\img\cuci\EsBuah.jpg'],
+  ['Cookies', 501, 'RoToBoGo\img\cuci\Cookies.jpg'],
+  ['Donat', 452, 'RoToBoGo\img\cuci\Donat.jpg'],
+  ['Croissant', 406, 'RoToBoGo\img\cuci\Croissant.jpeg'],
+  ['Waffle', 291, 'RoToBoGo\img\cuci\Waffle.jpg'],
+  ['Bolu', 257, 'RoToBoGo\img\cuci\Bolu.jpg'],
+  ['Keripik Singkong', 220, 'RoToBoGo\img\cuci\KeripikSingkong.jpg'],
+  ['Bakwan', 137, 'RoToBoGo\img\cuci\Bakwan.jpg'],
+  ['Cakwe', 200, 'RoToBoGo\img\cuci\Cakwe.jpg'],
+  ['Pisang Rebus', 105, 'RoToBoGo\img\cuci\PisangRebus.jpg']
 ]
 
-function totalDayAndCalorie (gender, target) {
+function totalDayAndCalorie (gender) {
 
-  let howLong = target*7
   let totalCal = 0
 
-  let output = {
-    daysOfDiet: howLong
-  }
+  let output = {}
   
   if(gender === 'female') {
     totalCal = 1500
@@ -77,10 +74,20 @@ function totalDayAndCalorie (gender, target) {
   return output
 }
 
-// console.log(totalDayAndCalorie('male', 4))
+function filterSisaKalori (sisaKalori, item) {
+  let result = []
+  for(let i = 0; i < item.length; i++){
+    if(item[i][1] <= sisaKalori) {
+      result.push(item[i])
+    }
+  }
+  let choose = Math.floor(Math.random()*result.length)
+  result = result[choose]
+  return result
+}
 
 function chooseMakanan (gender, target, makanan, minuman, pencuciMulut) {
-  let total =  totalDayAndCalorie (gender, target)
+  let total =  totalDayAndCalorie (gender)
   let output = {}
   let result = []
   
@@ -188,17 +195,4 @@ function chooseMakanan (gender, target, makanan, minuman, pencuciMulut) {
 
   return result
 }
-console.log(chooseMakanan('male', 2, Makanan, Minuman, PencuciMulut))
-
-function filterSisaKalori (sisaKalori, item) {
-  let result = []
-  for(let i = 0; i < item.length; i++){
-    if(item[i][1] <= sisaKalori) {
-      result.push(item[i])
-    }
-  }
-  let choose = Math.floor(Math.random()*result.length)
-  result = result[choose]
-  return result
-}
-// console.log(filterSisaKalori(2, Minuman))
+console.log(chooseMakanan('male', 6, Makanan, Minuman, PencuciMulut))
