@@ -1,33 +1,97 @@
-function workout(data) {
-const workout = {
-  dada : {
-    pushUp : 10,
-    plank : 1,
-    chestPress : 10,
-    pullUp : 10,
-    chairDips : 15
+const workout = [
+  {dada: [
+  {
+    name : "push Up",
+    number : 10,
   },
-  perut : {
-    sitUp : 10,
-    crunch : 10,
-    mountainClimber : 8,
-    plank : 1,
-    Bridhe : 1,
+  {
+    name : "plank",
+    number : 1,
   },
-  kaki : {
-    squat : 10,
-    jumpingJack : 11,
-    lunge : 14,
-    sitWall : 1,
-    burpee : 10
+  {
+    name : "chest Press",
+    number : 10,
   },
-  lengan : {
-    pushUp : 10,
-    plankPress : 10,
-    curlBarbel : 16,
-    burpee : 16,
-    shoulderPress: 12,
-  }
-  }
+  {
+    name : "pull Up",
+    number : 15,
+  },
+  {
+    name : "chair Dips",
+    number : 15,
+  },
+  ]},
+  {perut:[
+    {
+      name : "sit Up",
+      number : 10,
+    },
+    {
+      name : "crunch",
+      number : 10,
+    },
+    {
+      name : "mountain Climber",
+      number : 8,
+    },
+    {
+      name : "plank",
+      number : 1,
+    },
+    {
+      name : "Bridhe",
+      number : 1,
+    },
+  ]},
+  {kaki : [
+    {
+      name : "squat",
+      number : 10,
+    },
+    {
+      name : "jumping Jack",
+      number : 11,
+    },
+    {
+      name : "lunge",
+      number : 14,
+    },
+    {
+      name : "sit Wall",
+      number : 1,
+    },
+    {
+      name : "burpee",
+      number : 10,
+    },
+  ]},
+  {lengan : [
+    {
+      name : "push Up",
+      number : 10,
+    },
+    {
+      name : "plank Press",
+      number : 10,
+    },
+    {
+      name : "curl Barbel",
+      number : 10,
+    },
+    {
+      name : "burpee",
+      number : 10,
+    },
+    {
+      name : "shoulder Press",
+      number : 12,
+    },
+ ]},  
+]
+
+let pilih = ['dada', 'kaki']
+function workout(input, workout) {
+  
 }
-console.log(data);
+console.log(workout(pilih, dataworkout));
+  
