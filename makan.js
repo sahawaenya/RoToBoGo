@@ -1,3 +1,4 @@
+
 function totalDayAndCalorie (gender, target) {
 
   let howLong = target*7
@@ -118,3 +119,4 @@ function filterSisaKalori (sisaKalori, item) {
   return result
 }
 console.log(filterSisaKalori(200, Makanan))
+
