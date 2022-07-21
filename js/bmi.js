@@ -37,6 +37,8 @@ function calculateBmi(height, weight) {
     let result = 0
     height /= 100
     result = weight / Math.pow(height, 2)
+    // 18 = weight / (170 / 100)^2
+    // 18.5 x (height/100)^2 = weight
 
     return result.toFixed(1)
 }

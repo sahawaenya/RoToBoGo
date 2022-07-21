@@ -195,4 +195,16 @@ function chooseMakanan (gender, target, makanan, minuman, pencuciMulut) {
 
   return result
 }
-console.log(chooseMakanan('male', 6, Makanan, Minuman, PencuciMulut))
+// console.log(chooseMakanan('male', 2, Makanan, Minuman, PencuciMulut))
+
+function checkReq(target, weight, height){
+  let minWeight = Math.ceil(18.5 * Math.pow((height/100), 2))
+  // console.log(minWeight)
+  if ( (weight - target) < minWeight){
+    return [false, minWeight]
+  }else{
+    return [true, minWeight]
+  }
+}
+
+console.log(checkReq(17, 70, 170))
