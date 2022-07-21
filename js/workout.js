@@ -1,3 +1,9 @@
+// Create element:
+const para = document.createElement("p");
+para.innerHTML = "This new div";
+
+// Append to another element:
+document.getElementById("006addbar").appendChild(para);
 const workout = 
   {dada: [
   {
@@ -121,50 +127,4 @@ for (let i = 0; i < input.length; i++) {
   
 }
 console.log(workoutChooses(pilih, workout));
-/*
-*
-[
-  {
-    name : "push Up",
-    number : 10,
-  },
-  {
-    name : "plank",
-    number : 1,
-  },
-  {
-    name : "chest Press",
-    number : 10,
-  },
-  {
-    name : "pull Up",
-    number : 15,
-  },
-  {
-    name : "chair Dips",
-    number : 15,
-  },
-  {
-      name : "squat",
-      number : 10,
-    },
-    {
-      name : "jumping Jack",
-      number : 11,
-    },
-    {
-      name : "lunge",
-      number : 14,
-    },
-    {
-      name : "sit Wall",
-      number : 1,
-    },
-    {
-      name : "burpee",
-      number : 10,
-    },
-  ]
-*/
-
 
