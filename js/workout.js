@@ -1,9 +1,48 @@
 // Create element:
-const para = document.createElement("p");
+const para = document.createElement("div");
 para.innerHTML = "This new div";
-
-// Append to another element:
+para.setAttribute("class", "democlass")
+para.setAttribute("id", "add006addbar")
 document.getElementById("006addbar").appendChild(para);
+const para1 = document.createElement("div");
+para1.innerHTML = "This new div";
+para1.setAttribute("class", "democlass")
+para.appendChild(para1);
+
+/*
+<div class="col-md-6">
+  <div class="skill mb-4">
+      <div class="d-flex justify-content-between">
+          <h6 class="font-weight-bold">HTML</h6>
+          <h6 class="font-weight-bold">95%</h6>
+      </div>
+      <div class="progress">
+          <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+  </div>
+  // ============= bagian ini akan looping
+  // <div class="skill mb-4">
+  //     <div class="d-flex justify-content-between">
+  //         <h6 class="font-weight-bold">CSS</h6>
+  //         <h6 class="font-weight-bold">85%</h6>
+  //     </div>
+  //     <div class="progress">
+  //         <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+  //     </div>
+  // </div>
+  // <div class="skill mb-4">
+  //     <div class="d-flex justify-content-between">
+  //         <h6 class="font-weight-bold">PHP</h6>
+  //         <h6 class="font-weight-bold">90%</h6>
+  //     </div>
+  //     <div class="progress">
+  //         <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+  //     </div>
+  // </div>
+  // =============== looping sampai sini
+</div>
+*/
+
 const workout = 
   {dada: [
   {
