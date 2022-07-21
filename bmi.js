@@ -45,34 +45,18 @@ function calculateBmi(height, weight) {
 
 // == dom ==
 
-const bmi = calculateBmi(173, 50)
+const bmi = calculateBmi(height, weight)
 let message = null
-let desc = null
 
 if (bmi <= 18.4) {
-    message = `BMI Anda adalah ${bmi} Anda kurang berat badan`
-    desc = `kurus`
+    message = `Your Body Mass Index (BMI) is ${bmi}. You are UNDERWEIGHT`
 } else if (bmi >= 18.5 && bmi <= 24.9) {
-    message = `BMI Anda adalah ${bmi} BMI Anda termasuk normal`
-    desc = `normal`
+    message = `Your Body Mass Index (BMI) is ${bmi}. You are NORMAL`
 } else if (bmi >= 25 && bmi <= 29.9) {
-    message = `BMI Anda adalah ${bmi} Anda tergolong gemuk`
-    desc = `gemuk`
+    message = `Your Body Mass Index (BMI) is ${bmi}. You are OVERWEIGHT`
 } else if (bmi >= 30) {
-    message = `BMI Anda adalah ${bmi} Anda obesitas`
-    desc = `obes`
-}
-
-if (desc === 'kurus') {
-    document.getElementById('005kurus').style.fontWeight = "bold"
-} else if (desc === 'normal') {
-    document.getElementById('005normal').style.fontWeight = "bold"
-} else if (desc === 'gemuk') {
-    document.getElementById('005gemuk').style.fontWeight = "bold"
-} else if (desc === 'obes') {
-    document.getElementById('005obes').style.fontWeight = "bold"
+    message = `Your Body Mass Index (BMI) is ${bmi}. You are OBESE`
 }
 
 
-document.getElementById("005result").innerText = bmi
-document.getElementById("005message").innerText = message
+// document.getElementById("results").innerHTML = message
