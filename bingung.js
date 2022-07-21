@@ -1,4 +1,3 @@
-
 function totalDayAndCalorie (gender, target) {
 
   let howLong = target*7
@@ -84,19 +83,23 @@ function foodRecommendation (gender, target, makanan, minuman, pencuciMulut) {
 
   let result = []
 
-  let choose = Math.floor(Math.random()*makanan.length)
-
   let total =  totalDayAndCalorie (gender, target)
   let calPagi = total.calPagi
   let calSiang = total.calSiang
   let calMalam = total.calMalam
   let filter = filterSisaKalori (sisaKalori, item)
 
-  
+  let flag = true
+  while(flag === true) {
+    let makan = filterSisaKalori()
+  }
   
 
   let calorie1 = Math.round(total['Total Calorie per Day']/3)
+
   
+
+  // let choose = Math.floor(Math.random()*makanan.length)
   // console.log(choose)
   // kaloriMakanan = dataKalori.Makanan[choose][1]
 
@@ -107,7 +110,7 @@ function foodRecommendation (gender, target, makanan, minuman, pencuciMulut) {
 }
 
 // console.log(foodRecommendation('man', 4))
-console.log(foodRecommendation('male', 1, Makanan, Minuman, PencuciMulut))
+// console.log(foodRecommendation('male', 1, Makanan, Minuman, PencuciMulut))
 
 function filterSisaKalori (sisaKalori, item) {
   let result = []
@@ -116,7 +119,7 @@ function filterSisaKalori (sisaKalori, item) {
       result.push(item[i])
     }
   }
+  let choose = Math.floor(Math.random()*makanan.length)
   return result
 }
 console.log(filterSisaKalori(200, Makanan))
-
