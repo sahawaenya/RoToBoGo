@@ -1,27 +1,4 @@
-function totalDayAndCalorie (gender, target) {
-
-  let howLong = target*7
-
-  let output = {
-    'Days of Diet': howLong
-  }
-  
-  if(gender === 'woman') {
-    output['Total Calorie per Day'] = 1500
-  }
-  else if(gender === 'man') {
-    output['Total Calorie per Day'] = 2000
-  }
-
-  return output
-
-}
-
-console.log(totalDayAndCalorie('man', 4))
-
-function foodRecommendation (gender, target) {
-
-  const dataKalori = {
+const dataKalori = {
     Makanan : [
       ['Steak', 270],
       ['Mashed Potato', 88],
@@ -73,11 +50,5 @@ function foodRecommendation (gender, target) {
       ['Cakwe', 200],
       ['Pisang Rebus', 105]
     ]
-  }
-
-  let total =  totalDayAndCalorie (gender, target)
-
-  for(let i = 0; i < totalDayAndCalorie['Days of Diet']; i++) {
-    
-  }
 }
+
