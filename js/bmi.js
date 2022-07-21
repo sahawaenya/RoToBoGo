@@ -28,26 +28,18 @@
 
 // === function ===
 
-function calculateBmi(height, weight) {
-    
+function calculateBmi() {
     let result = 0
-    height /= 100
-    result = weight / Math.pow(height, 2)
+
+    var berat = document.getElementById("weight").value
+    var tinggi = document.getElementById("height").value
     
-    return result.toFixed(1)
-}
+    tinggi /= 100
+    result = berat / Math.pow(tinggi, 2)
+    
+    
 
-// console.log(calculateBmi(173, 83));
-
-// == dom ==
-
-function callBmi() {
-    let weight = document.getElementById("weight").value
-    let height = document.getElementById("height").value
-
-    const bmi = calculateBmi(height, weight)
-    let message = null
-    let desc = null
+    let bmi = result.toFixed(1)
     
     if (bmi <= 18.4) {
         message = `BMI Anda adalah ${bmi} Anda kurang berat badan`
@@ -78,6 +70,27 @@ function callBmi() {
     }
     
     
-    document.getElementById("005result").innerHTML = bmi
+    document.getElementById("005result").innerText = bmi
     document.getElementById("005message").innerText = message
+}
+
+// console.log(calculateBmi(173, 83));
+
+// == dom ==
+
+function reset() {
+    
+    document.getElementById("005weight").value = 0
+    document.getElementById("005height").value = 0
+
+    document.getElementById('005kurus').style.fontWeight = 'normal'
+    document.getElementById('005normal').style.fontWeight = 'normal'
+    document.getElementById('005gemuk').style.fontWeight = 'normal'
+    document.getElementById('005obes').style.fontWeight = 'normal'
+
+    document.getElementById("005wise").innerText = ''
+    document.getElementById("005result").innerText = 0
+    document.getElementById("005message").innerText = ''
+
+    
 }
