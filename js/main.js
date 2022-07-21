@@ -1,5 +1,7 @@
+
 (function ($) {
     "use strict";
+    document.getElementById("headerJob").innerHTML = "sabiq, ganteng, banget"
 
     // Spinner
     var spinner = function () {
@@ -10,6 +12,7 @@
         }, 1);
     };
     spinner();
+
     
     
     // Initiate the wowjs
@@ -123,4 +126,6 @@
 
     
 })(jQuery);
+
+
 
