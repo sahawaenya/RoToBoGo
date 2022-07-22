@@ -45,6 +45,23 @@ function calculateBmi(height, weight) {
 
 // console.log(calculateBmi(173, 83));
 
+function checkTarget(height, weight, target) {
+    
+    let weightMin = 18.5 * ((height/100)*(height/100))
+    let maxTarget = Math.ceil(weight-weightMin)
+    console.log(maxTarget)
+
+    if (maxTarget >= target) {
+        return [true, ``]
+    } 
+    else {
+        return [false, `Target anda terlalu tinggi. Berat badan yang bisa anda turunkan maksimal ${maxTarget} kg`]
+    }
+
+}
+console.log(checkTarget(164, 80, 31))
+console.log(checkTarget(164, 53, 12))
+
 // == dom ==
 
 const bmi = calculateBmi(173, 50)
@@ -65,16 +82,16 @@ if (bmi <= 18.4) {
     desc = `obes`
 }
 
-if (desc === 'kurus') {
-    document.getElementById('005kurus').style.fontWeight = "bold"
-} else if (desc === 'normal') {
-    document.getElementById('005normal').style.fontWeight = "bold"
-} else if (desc === 'gemuk') {
-    document.getElementById('005gemuk').style.fontWeight = "bold"
-} else if (desc === 'obes') {
-    document.getElementById('005obes').style.fontWeight = "bold"
-}
+// if (desc === 'kurus') {
+//     document.getElementById('005kurus').style.fontWeight = "bold"
+// } else if (desc === 'normal') {
+//     document.getElementById('005normal').style.fontWeight = "bold"
+// } else if (desc === 'gemuk') {
+//     document.getElementById('005gemuk').style.fontWeight = "bold"
+// } else if (desc === 'obes') {
+//     document.getElementById('005obes').style.fontWeight = "bold"
+// }
 
 
-document.getElementById("005result").innerText = bmi
-document.getElementById("005message").innerText = message
+// document.getElementById("005result").innerText = bmi
+// document.getElementById("005message").innerText = message
