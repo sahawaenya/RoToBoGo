@@ -51,7 +51,7 @@ for ( let i = 0 ; i < 3 ; i++){
 
     const para4 = document.createElement("div");
     // para4.innerHTML = "para4";
-    if(i ===0){
+        if(i ===0){
       para4.setAttribute("class", "progress-bar bg-primary")
       }
       if(i === 1 ){
@@ -165,7 +165,7 @@ const workout =
     },
  ]}
 
-// let pilih = ['dada', 'kaki']
+let pilih = ['dada', 'kaki']
 function workoutChooses(input, work) {
   let result = []
   // console.log(work[input[1]]);

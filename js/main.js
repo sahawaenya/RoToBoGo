@@ -2,7 +2,7 @@
 
 (function ($) {
     "use strict";
-    document.getElementById("headerJob").innerHTML = "target: 2 kg, lama progam: 7 hari, banget"
+    
 
     // Spinner
     var spinner = function () {
@@ -160,13 +160,14 @@ function storeData() {
         output.targetBody.push(document.getElementById('perut').value)
     }
 
-    console.log(output);
+    
 
     document.getElementById('contact').style.display = 'none'
     // document.querySelector('.hide').style.setProperty('display', 'block')
     // document.getElementsByTagName('div').removeProperty('display')
+    console.log(output)
 }
-
+// console.log(storeData())
 
 // const hidden = document.querySelector('.hide');
 // function showUp() {

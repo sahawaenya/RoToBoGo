@@ -29,6 +29,7 @@
 // === function ===
 
 function calculateBmi() {
+    document.getElementById("headerJob").innerHTML = document.getElementById('name').value
     let result = 0
 
     var berat = document.getElementById("weight").value
