@@ -108,7 +108,6 @@ for (let i = 0; i < input.length; i++) {
         flag = false
         break
       }
-      
     }
     // console.log(work[input[i]][j]);
     if (flag){
