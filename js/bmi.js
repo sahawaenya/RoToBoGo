@@ -24,57 +24,78 @@
  */
 
 // ------------------------------------------------------------------------------------------------------------------------------
-// === input ===
-
-// let weight = document.getElementById("weight").value
-// let height = document.getElementById("height").value
 
 
 // === function ===
 
-function calculateBmi(height, weight) {
-
+function calculateBmi() {
     let result = 0
-    height /= 100
-    result = weight / Math.pow(height, 2)
-    // 18 = weight / (170 / 100)^2
-    // 18.5 x (height/100)^2 = weight
 
-    return result.toFixed(1)
+    var berat = document.getElementById("weight").value
+    var tinggi = document.getElementById("height").value
+    
+    tinggi /= 100
+    result = berat / Math.pow(tinggi, 2)
+    
+    
+
+    let bmi = result.toFixed(1)
+    
+    if (bmi <= 18.4) {
+        message = `BMI Anda adalah ${bmi} Anda kurang berat badan`
+        desc = `kurus`
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        message = `BMI Anda adalah ${bmi} BMI Anda termasuk normal`
+        desc = `normal`
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        message = `BMI Anda adalah ${bmi} Anda tergolong gemuk`
+        desc = `gemuk`
+    } else if (bmi >= 30) {
+        message = `BMI Anda adalah ${bmi} Anda obesitas`
+        desc = `obes`
+    }
+    
+    if (desc === 'kurus') {
+        document.getElementById('005kurus').style.fontWeight = "bold"
+        document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, setiap sesuatu yang besar berawal dari yang kecil. Tingkatkan terus dan jaga pola makan, serta makan makanan yang sehat agar berat badanmu segera menuju ideal yaa'
+        document.getElementById("005img").src = "img/1.png";
+    } else if (desc === 'normal') {
+        document.getElementById('005normal').style.fontWeight = "bold"
+        document.getElementById("005wise").innerText = 'Selamat! berat badanmu ideal! jaga selalu kesehatan tubuhmu dengan menjaga pola makan dan rajin berolahraga'
+        document.getElementById("005img").src = "img/2.png";
+    } else if (desc === 'gemuk') {
+        document.getElementById('005gemuk').style.fontWeight = "bold"
+        document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, kamu hanya perlu sedikit berusaha agar berat badanmu berkurang. Rajin berolahraga dan jaga pola makan yaa'
+        document.getElementById("005img").src = "img/3.png";
+    } else if (desc === 'obes') {
+        document.getElementById('005obes').style.fontWeight = "bold"
+        document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, kamu tidak sendiri kok. Mari kita perbaiki bersama-sama dengan dimulai dari kebiasaan hidup sehat yaa'
+        document.getElementById("005img").src = "img/4.png";
+    }
+    
+    
+    document.getElementById("005result").innerText = bmi
+    document.getElementById("005message").innerText = message
+    
 }
 
 // console.log(calculateBmi(173, 83));
 
-// == dom ==
+// == not yet ==
 
-const bmi = calculateBmi(173, 50)
-let message = null
-let desc = null
+// function reset() {
+    
+//     document.getElementById("005weight").value = 0
+//     document.getElementById("005height").value = 0
 
-if (bmi <= 18.4) {
-    message = `BMI Anda adalah ${bmi} Anda kurang berat badan`
-    desc = `kurus`
-} else if (bmi >= 18.5 && bmi <= 24.9) {
-    message = `BMI Anda adalah ${bmi} BMI Anda termasuk normal`
-    desc = `normal`
-} else if (bmi >= 25 && bmi <= 29.9) {
-    message = `BMI Anda adalah ${bmi} Anda tergolong gemuk`
-    desc = `gemuk`
-} else if (bmi >= 30) {
-    message = `BMI Anda adalah ${bmi} Anda obesitas`
-    desc = `obes`
-}
+//     document.getElementById('005kurus').style.fontWeight = 'normal'
+//     document.getElementById('005normal').style.fontWeight = 'normal'
+//     document.getElementById('005gemuk').style.fontWeight = 'normal'
+//     document.getElementById('005obes').style.fontWeight = 'normal'
 
-if (desc === 'kurus') {
-    document.getElementById('005kurus').style.fontWeight = "bold"
-} else if (desc === 'normal') {
-    document.getElementById('005normal').style.fontWeight = "bold"
-} else if (desc === 'gemuk') {
-    document.getElementById('005gemuk').style.fontWeight = "bold"
-} else if (desc === 'obes') {
-    document.getElementById('005obes').style.fontWeight = "bold"
-}
+//     document.getElementById("005wise").innerText = ''
+//     document.getElementById("005result").innerText = 0
+//     document.getElementById("005message").innerText = ''
 
-
-document.getElementById("005result").innerText = bmi
-document.getElementById("005message").innerText = message
+    
+// }

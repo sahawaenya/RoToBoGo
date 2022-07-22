@@ -181,6 +181,10 @@
     }
 }
 
+#contact {
+    margin-bottom: 360px;
+}
+
 .modal-video .modal-dialog {
     position: relative;
     max-width: 800px;
@@ -428,3 +432,7 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+/* .hide {
+    display: none;
+} */
