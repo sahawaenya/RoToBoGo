@@ -1,3 +1,18 @@
+const para = document.createElement("div");
+para.innerHTML = "Para";
+para.setAttribute("class", "col-md-6")
+document.getElementById("007111").appendChild(para);
+
+
+
+
+/* <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a> */
+
 const Makanan = [
   ['Steak', 270, 'RoToBoGo\img\makanan\Steak.png'],
   ['Mashed Potato', 88, 'RoToBoGo\img\makanan\MashedPotato.jpg'],

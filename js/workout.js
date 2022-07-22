@@ -1,13 +1,41 @@
 // Create element:
 const para = document.createElement("div");
-para.innerHTML = "This new div";
-para.setAttribute("class", "democlass")
-para.setAttribute("id", "add006addbar")
+para.innerHTML = "Para";
+para.setAttribute("class", "col-md-6")
 document.getElementById("006addbar").appendChild(para);
+
 const para1 = document.createElement("div");
-para1.innerHTML = "This new div";
-para1.setAttribute("class", "democlass")
+para1.innerHTML = "Para1";
+para1.setAttribute("class", "skill mb-4")
 para.appendChild(para1);
+
+const para2 = document.createElement("div");
+para2.innerHTML = "Para2";
+para2.setAttribute("class", "d-flex justify-content-between")
+para1.appendChild(para2);
+
+const head = document.createElement("h6");
+head.innerHTML = "h6";
+head.setAttribute("class", "font-weight-bold")
+para2.appendChild(head);
+
+const head1 = document.createElement("h6");
+head1.innerHTML = "h6";
+head1.setAttribute("class", "font-weight-bold")
+para2.appendChild(head1);
+
+const para3 = document.createElement("div");
+para3.innerHTML = "para3";
+para3.setAttribute("class", "progress")
+para1.appendChild(para3);
+
+const para4 = document.createElement("div");
+para4.innerHTML = "para4";
+para4.setAttribute("class", "progress-bar bg-primary")
+para4.setAttribute("class", "progressbar")
+para4.setAttribute("class", "20")
+para4.setAttribute("class", "0")
+para3.appendChild(para4);
 
 /*
 <div class="col-md-6">
