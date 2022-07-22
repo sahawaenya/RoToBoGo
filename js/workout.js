@@ -51,7 +51,15 @@ for ( let i = 0 ; i < 3 ; i++){
 
     const para4 = document.createElement("div");
     // para4.innerHTML = "para4";
-    para4.setAttribute("class", "progress-bar bg-primary")
+    if(i ===0){
+      para4.setAttribute("class", "progress-bar bg-primary")
+      }
+      if(i === 1 ){
+        para4.setAttribute("class", "progress-bar bg-warning")
+        }
+        if(i === 2){
+          para4.setAttribute("class", "progress-bar bg-danger")
+          }
     para4.setAttribute("role", "progressbar")
     para4.setAttribute("aria-valuenow", ranNow)
     para4.setAttribute("aria-valuemin", "0")
