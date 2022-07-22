@@ -1,7 +1,8 @@
 
+
 (function ($) {
     "use strict";
-    document.getElementById("headerJob").innerHTML = "sabiq, ganteng, banget"
+    document.getElementById("headerJob").innerHTML = "target: 2 kg, lama progam: 7 hari, banget"
 
     // Spinner
     var spinner = function () {

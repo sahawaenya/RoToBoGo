@@ -1,3 +1,68 @@
+function addBar(input){
+for (let h = 0 ; h < input.length ; h += 3){
+  const paren = document.createElement("div");
+  // para.innerHTML = "Para";
+  paren.setAttribute("class", "row align-items-center")
+  document.getElementById("006addbar").appendChild(paren);
+for ( let i = 0 ; i < 3 ; i++){
+  let nomor = h + i
+  let dataIn = input[nomor]
+  if(!input[nomor]){
+    continue
+  }
+  let numNow =  Math.floor(Math.random()*dataIn.number)
+  let ranNow = Math.floor((Math.floor(numNow)/dataIn.number)*100)
+  // console.log(ranNow, "ran <<<<")
+    // Create element:
+    // const paren = document.createElement("div");
+    // // para.innerHTML = "Para";
+    // paren.setAttribute("class", "row align-items-center")
+    // document.getElementById("006addbar").appendChild(paren);
+
+    const para = document.createElement("div");
+    // para.innerHTML = "Para";
+    paren.setAttribute("class", "col-md-6")
+    paren.appendChild(para);
+
+    const para1 = document.createElement("div");
+    // para1.innerHTML = "Para1";
+    para1.setAttribute("class", "skill mb-4")
+    para.appendChild(para1);
+
+    const para2 = document.createElement("div");
+    // para2.innerHTML = "Para2";
+    para2.setAttribute("class", "d-flex justify-content-between")
+    para1.appendChild(para2);
+
+    const head = document.createElement("h6");
+    head.innerHTML = dataIn.name;
+    head.setAttribute("class", "font-weight-bold")
+    para2.appendChild(head);
+
+    const head1 = document.createElement("h6");
+    head1.innerHTML = `${numNow} / ${dataIn.number}`;
+    head1.setAttribute("class", "font-weight-bold")
+    para2.appendChild(head1);
+
+    const para3 = document.createElement("div");
+    // para3.innerHTML = "para3";
+    para3.setAttribute("class", "progress")
+    para1.appendChild(para3);
+
+    const para4 = document.createElement("div");
+    // para4.innerHTML = "para4";
+    para4.setAttribute("class", "progress-bar bg-primary")
+    para4.setAttribute("role", "progressbar")
+    para4.setAttribute("aria-valuenow", ranNow)
+    para4.setAttribute("aria-valuemin", "0")
+    para4.setAttribute("aria-valuemax", "100")
+    para3.appendChild(para4);
+    }
+}
+}
+
+
+
 const workout = 
   {dada: [
   {
@@ -120,51 +185,5 @@ for (let i = 0; i < input.length; i++) {
   return result
   
 }
-console.log(workoutChooses(pilih, workout));
-/*
-*
-[
-  {
-    name : "push Up",
-    number : 10,
-  },
-  {
-    name : "plank",
-    number : 1,
-  },
-  {
-    name : "chest Press",
-    number : 10,
-  },
-  {
-    name : "pull Up",
-    number : 15,
-  },
-  {
-    name : "chair Dips",
-    number : 15,
-  },
-  {
-      name : "squat",
-      number : 10,
-    },
-    {
-      name : "jumping Jack",
-      number : 11,
-    },
-    {
-      name : "lunge",
-      number : 14,
-    },
-    {
-      name : "sit Wall",
-      number : 1,
-    },
-    {
-      name : "burpee",
-      number : 10,
-    },
-  ]
-*/
-
+addBar(workoutChooses(pilih, workout));
 
