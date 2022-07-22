@@ -165,7 +165,7 @@ const workout =
     },
  ]}
 
-let pilih = ['dada', 'kaki']
+// let pilih = ['dada', 'kaki']
 function workoutChooses(input, work) {
   let result = []
   // console.log(work[input[1]]);
