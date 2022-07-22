@@ -128,4 +128,48 @@
 })(jQuery);
 
 
+// 
+let checkTarget = checkTarget()
+// output [false, 'target terlalu tinggi']
+if (!checkTarget[0]){
+    // popup => alert('target terlalu tinggi')
+}
 
+function storeData() {
+    let output = {
+        nama: '',
+        gender: '',
+        height: 0,
+        weight: 0,
+        targetTurun: 0,
+        targetBody: []
+    }
+    output.nama = document.getElementById('name').value
+    output.gender = document.querySelector('input[name="gender"]:checked').value
+    output.height = document.getElementById('height').value
+    output.weight = document.getElementById('weight').value
+    output.targetTurun = document.getElementById('target').value
+    if (document.getElementById('dada').value) {
+        output.targetBody.push(document.getElementById('dada').value)
+    } else if (document.getElementById('lengan').value) {
+        output.targetBody.push(document.getElementById('lengan').value)
+    } else if (document.getElementById('paha').value) {
+        output.targetBody.push(document.getElementById('paha').value)
+    } else if (document.getElementById('perut').value) {
+        output.targetBody.push(document.getElementById('perut').value)
+    }
+
+    console.log(output);
+
+    document.getElementById('contact').style.display = 'none'
+    // document.querySelector('.hide').style.setProperty('display', 'block')
+    // document.getElementsByTagName('div').removeProperty('display')
+}
+
+
+// const hidden = document.querySelector('.hide');
+// function showUp() {
+//     hidden.style.removeProperty('display')
+// }
+
+// hidden.addEventListener('click', showUp)

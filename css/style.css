@@ -432,3 +432,7 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+/* .hide {
+    display: none;
+} */

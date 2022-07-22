@@ -58,39 +58,44 @@ function calculateBmi() {
     if (desc === 'kurus') {
         document.getElementById('005kurus').style.fontWeight = "bold"
         document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, setiap sesuatu yang besar berawal dari yang kecil. Tingkatkan terus dan jaga pola makan, serta makan makanan yang sehat agar berat badanmu segera menuju ideal yaa'
+        document.getElementById("005img").src = "img/1.png";
     } else if (desc === 'normal') {
         document.getElementById('005normal').style.fontWeight = "bold"
         document.getElementById("005wise").innerText = 'Selamat! berat badanmu ideal! jaga selalu kesehatan tubuhmu dengan menjaga pola makan dan rajin berolahraga'
+        document.getElementById("005img").src = "img/2.png";
     } else if (desc === 'gemuk') {
         document.getElementById('005gemuk').style.fontWeight = "bold"
         document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, kamu hanya perlu sedikit berusaha agar berat badanmu berkurang. Rajin berolahraga dan jaga pola makan yaa'
+        document.getElementById("005img").src = "img/3.png";
     } else if (desc === 'obes') {
         document.getElementById('005obes').style.fontWeight = "bold"
         document.getElementById("005wise").innerText = 'Hai Kamu! Jangan bersedih, kamu tidak sendiri kok. Mari kita perbaiki bersama-sama dengan dimulai dari kebiasaan hidup sehat yaa'
+        document.getElementById("005img").src = "img/4.png";
     }
     
     
     document.getElementById("005result").innerText = bmi
     document.getElementById("005message").innerText = message
+    
 }
 
 // console.log(calculateBmi(173, 83));
 
-// == dom ==
+// == not yet ==
 
-function reset() {
+// function reset() {
     
-    document.getElementById("005weight").value = 0
-    document.getElementById("005height").value = 0
+//     document.getElementById("005weight").value = 0
+//     document.getElementById("005height").value = 0
 
-    document.getElementById('005kurus').style.fontWeight = 'normal'
-    document.getElementById('005normal').style.fontWeight = 'normal'
-    document.getElementById('005gemuk').style.fontWeight = 'normal'
-    document.getElementById('005obes').style.fontWeight = 'normal'
+//     document.getElementById('005kurus').style.fontWeight = 'normal'
+//     document.getElementById('005normal').style.fontWeight = 'normal'
+//     document.getElementById('005gemuk').style.fontWeight = 'normal'
+//     document.getElementById('005obes').style.fontWeight = 'normal'
 
-    document.getElementById("005wise").innerText = ''
-    document.getElementById("005result").innerText = 0
-    document.getElementById("005message").innerText = ''
+//     document.getElementById("005wise").innerText = ''
+//     document.getElementById("005result").innerText = 0
+//     document.getElementById("005message").innerText = ''
 
     
-}
+// }

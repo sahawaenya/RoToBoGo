@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ProMan - Personal Portfolio HTML Template</title>
+    <title>RoToBoGo - Road To Body Goals</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -79,62 +79,76 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">Let's Work Together</h1>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
-                </div>
+               
             </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">123 Street, New York, USA</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+012 345 6789</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">info@example.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
+                    <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p> -->
+                    <div class="row g-3">
+                        
+                        
+                        <div class="col-12">
+                                <p class="mb-4">Jenis Kelamin</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Laki-laki">
+                                    <label class="form-check-label" for="male">
+                                      Laki-laki
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Perempuan">
+                                    <label class="form-check-label" for="female">
+                                      Perempuan
+                                    </label>
+                                  </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
+                                    <label for="name">Nama Lengkap</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="number" class="form-control" id="height" placeholder="Tinggi Badan (cm)">
+                                    <label for="height">Tinggi Badan (cm)</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
+                                    <input type="number" class="form-control" id="weight" placeholder="Berat Badan (kg)">
+                                    <label for="weight">Berat Badan (kg)</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="target" placeholder="Target Turun (kg)">
+                                    <label for="target">Target Turun (kg)</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-4">Target Body</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Dada" id="dada">
+                                    <label class="form-check-label" for="dada">Dada</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Lengan" id="lengan">
+                                    <label class="form-check-label" for="lengan">Lengan</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Paha" id="paha">
+                                    <label class="form-check-label" for="paha">Paha</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Perut" id="perut">
+                                    <label class="form-check-label" for="perut">Perut</label>
+                                  </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit" onclick="calculateBmi();storeData()">Submit</button>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -143,7 +157,7 @@
 
 
     <!-- Header Start || id="003XXX" -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <div class="container-fluid bg-light my-6 mt-0 hide" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
@@ -152,7 +166,7 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none"><p id="headerJob">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</p></div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
@@ -170,7 +184,7 @@
 
 
     <!-- Video Modal Start || id="004XXX" -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-video fade hide" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -192,7 +206,7 @@
 
 
     <!-- BMI Start || id="005XXX" -->
-    <div class="container-xxl py-6" id="bmi">
+    <div class="container-xxl py-6 hide" id="bmi">
 
 
         <div class="container">
@@ -200,12 +214,28 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0" id="005result" data-toggle="counter-up">15</h1>
+                            <h1 class="display-1 mb-0" id="005result" data-toggle="counter-up"></h1>
                             <!-- <h5 class="mb-0">Years</h5> -->
                         </div>
-                        <h3 class="lh-base mb-0" id="005message">of working experience as a web designer & developer</h3>
+                        <h3 class="lh-base mb-0" id="005message"></h3>
                     </div>
+                    <div class="row g-3 mb-4">
+                        <!-- <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div> -->
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="" alt="" id="005img">
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                    </div> -->
+                    <p class="mb-4" id="005wise"></p>
                     <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p> -->
+                    
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4">Berat badan Anda bisa dikatakan ideal jika angka BMI Anda berada antara angka 18,5 sampai 24,9. Bagaimana cara menjaga agar berat badan tetap ideal? Anda perlu mengonsumsi makanan dan minuman sesuai dengan kebutuhan kalori harian Anda.</p>
                     <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
@@ -214,27 +244,12 @@
                     <p class="mb-3" id="005normal"><i class="far fa-check-circle text-primary me-3"></i>Normal: 18,5 - 24,9</p>
                     <p class="mb-3" id="005gemuk"><i class="far fa-check-circle text-primary me-3"></i>Gemuk: 25 - 30</p>
                     <p class="mb-3" id="005obes"><i class="far fa-check-circle text-primary me-3"></i>Obesitas: &gt; 30</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="#workout">Read More</a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
-                    <div class="d-flex align-items-center mb-3">
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="#workout">Next</a>
+                    <!-- <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
                     </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p> -->
                 </div>
             </div>
         </div>
@@ -243,7 +258,7 @@
 
 
     <!-- WORKOUT Start || id="006XXX"-->
-    <div class="container-xxl py-6 pb-5" id="workout">
+    <div class="container-xxl py-6 pb-5 hide" id="workout">
 
         <div class="container">
             <div class="row g-5">
@@ -363,7 +378,7 @@
 
 
     <!-- DIET Start || id="007XXX"-->
-    <div class="container-xxl py-6 pt-5" id="diet">
+    <div class="container-xxl py-6 pt-5 hide" id="diet">
 
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
@@ -441,7 +456,7 @@
 
     
     <!-- Service Start || id="008XXX" -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
+    <div class="container-fluid bg-light my-5 py-6 hide" id="service">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -507,7 +522,7 @@
 
 
     <!-- Team Start || id="009XXX"-->
-    <div class="container-xxl py-6 pb-5" id="team">
+    <div class="container-xxl py-6 pb-5 hide" id="team">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -573,7 +588,7 @@
 
 
     <!-- Testimonial Start || id="010XXX"-->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+    <div class="container-fluid bg-light py-5 my-5 hide" id="testimonial">
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
             <div class="row justify-content-center">
